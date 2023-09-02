@@ -27,7 +27,8 @@ if __name__ == '__main__':
     num_views, num_angles, num_depths = 300, 12, 4
     fric_coef_thresh = 0.8
     point_grasp_num = num_views * num_angles * num_depths
-    for scene_id in range(100):
+    scene_ids = [0,1,2,3,4,5,18,19,20,21,22,23,42,43,44,45,46,47,54,67,68,69,70,71,78,85,86,87,88]
+    for scene_id in scene_ids:
         save_path = os.path.join(save_path_root, 'scene_' + str(scene_id).zfill(4), camera_type)
         if not os.path.exists(save_path):
             os.makedirs(save_path)
@@ -37,7 +38,9 @@ if __name__ == '__main__':
         for j in range(len(labels)):
             collision_dump.append(labels['arr_{}'.format(j)])
 
-        for ann_id in range(256):
+        ann_ids = [0,50,100]
+
+        for ann_id in ann_ids:
             # get scene point cloud
             print('generating scene: {} ann: {}'.format(scene_id, ann_id))
             depth = np.array(Image.open(os.path.join(dataset_root, 'scenes', 'scene_' + str(scene_id).zfill(4),
