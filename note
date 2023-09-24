@@ -1,3 +1,3 @@
 conda activate GraspNet_env
-(GraspNet_env) cuong@cuong-XPS-15-9560:~/github/graspnetAPI$ python generate_graspness.py --dataset_root /media/cuong/HD-PZFU3/datasets/graspnet --camera_type kinect
-(GraspNet_env) cuong@cuong-XPS-15-9560:~/github/graspnetAPI/examples$ python vis_graspness.py
+(GraspNet_env) cuong@cuong-XPS-15-9560:~/github/graspness_implementation/dataset$ python generate_graspness.py --dataset_root /media/cuong/HD-PZFU3/datasets/graspnet --camera_type kinect
+(GraspNet_env) cuong@cuong-XPS-15-9560:~/github/graspness_implementation/dataset$ python vis_graspness.py

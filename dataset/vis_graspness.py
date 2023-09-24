@@ -9,7 +9,7 @@ sys.path.append(ROOT_DIR)
 from utils.data_utils import get_workspace_mask, CameraInfo, create_point_cloud_from_depth_image
 
 data_path = '/media/cuong/HD-PZFU3/datasets/graspnet'
-scene_id = 'scene_0088'
+scene_id = 'scene_0030'
 ann_id = '0000'
 camera_type = 'kinect'
 color = np.array(Image.open(os.path.join(data_path, 'scenes', scene_id, camera_type, 'rgb', ann_id + '.png')), dtype=np.float32) / 255.0
